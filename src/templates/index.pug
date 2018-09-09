@@ -1,0 +1,112 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home_slider
+		img.img-fuid(src="./img/home_slider_1.png", alt="")
+		.nkom
+			.container
+				.row
+					.col
+						h1 Chúng tôi là
+							br
+							|FullStack Vietnam
+						p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator
+						i.btn.btn-secondary XEM CHI TIẾT
+
+
+
+
+	section.home_banner
+		.owl-carousel.owl-theme
+			.container
+					.row
+						.col
+							img.img-fluid(src="./img/home_banner_1.png", alt="")
+							.item
+								h2 USA'S HOTTEST JEANS
+							.items
+								p SHOPPING NOW
+			.container
+					.row
+						.col
+							img.img-fluid(src="./img/home_banner_1.png", alt="")
+							.item
+								h2 USA'S HOTTEST JEANS
+							.items
+								p SHOPPING NOW
+			.container
+					.row
+						.col
+							img.img-fluid(src="./img/home_banner_1.png", alt="")
+							.item
+								h2 USA'S HOTTEST JEANS
+							.items
+								p SHOPPING NOW
+						
+	section.home_shop
+		.container
+			.row
+				.col
+					h2 FULLSTACKVIETNAM
+					.row
+						- for(x=1;x<5;x++)
+							.col-6.col-sm-6.col-lg-3.item
+								a(href="#")
+									figure
+										.hinh
+											img.img-fluid(src="./img/home_seviri_"+x+".png", alt="alt").class
+										figcaption 
+											h3 TRUNG TAM DAO TAO
+											p $36.59
+
+
+
+
+
+	section.home_banner2
+		.container
+			.row
+				.col.item
+					a(href="#")
+						.hinh
+							img.img-fluid(src="./img/home_banner_2.png", alt="")
+							.text
+								h2 HẠNH PHÚC Ở PHÍA SAU
+								p USA'S HOTTEST JEANS
+							.sale
+								span SALE
+									br
+									|20%
+
+
+	section.save
+		.container
+			.row
+				.col-md-5
+					a(href="")
+						.hinh
+							img.img-fluid(src="./img/home_team_1.png", alt="")
+				.col-md-7.okbaby
+					h3 HẠNH PHÚC PHÍA SAU
+					p Want the most stylish designs in metrosexual and gay apparel? Looking for the sexiest gay outfits and pride outfits? Differio has the trendiest gay pride apparel from gay pride clothing to lgbt clothing. Shop our gay menswear collection for the hottest gay pride outfits in gay clothing for men.
+
+	section.logonho
+		.container
+			.row
+				.col
+					h3 FULLSTACKVIETNAM
+			
+					.row
+						.col
+							.owl-carousel.owl-theme
+								- for(x=1;x<7;x++)
+									.items
+										a(href="")
+											img(src="./img/clients_"+x+".png", alt="")

@@ -1,0 +1,481 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home_slider
+	.img-fuid
+		width: 100%
+		position: relative
+	.nkom
+		position: absolute
+		display: flex
+		text-align: left
+		top: 0
+		width: 40%
+		color: $basic
+		margin-top: 1.7rem
+		h1
+			font-size: 0.7rem
+			
+		p
+			font-size: .5rem
+			margin-bottom: .5rem
+		.btn-secondary
+			font-size: .5rem
+			background: $whites
+			color: $blacks
+			font-weight: bold	
+	+media-breakpoint-up(md)
+		.nkom
+			margin-top: 3.5rem
+			h1
+				font-size: 2rem
+			p
+				font-size: 1.5rem
+				margin-bottom: 1rem
+			.btn-secondary
+				font-size: 1rem
+				&:hover,&:active
+					background: $peter-river
+	+media-breakpoint-up(lg)
+		.nkom
+			left: 6rem
+			width: 30%
+			margin-top: 10rem
+			h1
+				font-size: 3rem
+				margin-bottom: 3rem
+			p
+				font-size: 1.5rem
+				margin-bottom: 2rem
+			.btn-secondary
+				font-size: 2rem
+				&:hover,&:active
+					background: $peter-river
+
+
+
+
+
+body
+	background: $blacks
+
+.home_banner
+	margin: 2rem 0
+	
+	position: relative
+	.item
+		position: absolute
+		display: flex
+		top: 1rem
+		width: 60%
+		h2
+			font-size: 1rem
+			background: black
+			color: #fff
+		p
+			font-size: .5rem
+	.items
+		position: absolute
+		display: flex
+		top: 2.2rem
+		width: 60%
+		p
+			font-size: .5rem
+			background: yellow
+	.owl-dots
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%)
+		.owl-dot
+			span
+				width: 1.5rem
+				height: .3rem
+				border-radius: 4px
+				background: yellow
+	+media-breakpoint-up(md)
+		.item
+			top: 2rem
+			h2
+				font-size: 2rem
+				
+		.items
+			top: 4.4rem
+			p
+				font-size: 1.2rem
+		.owl-dots
+			top: 70%
+
+
+	+media-breakpoint-up(lg)
+		.item
+			top: 3rem
+			h2
+				font-size: 3.4rem
+				
+		.items
+			top: 7.1rem
+			p
+				font-size: 2rem
+		.owl-dots
+			top: 80%
+
+
+
+.home_shop
+	h2
+		font-size: 1rem
+		color: #fff
+		display: flex
+		justify-content: center
+		position: relative
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			height: .1rem
+			width: 5rem
+			background: darken(#fff,50%)
+			left: 1%
+			top: 35%
+		&:after
+			display: block
+			content: ''
+			position: absolute	
+			height: .1rem
+			width: 5rem
+			background: darken(#fff,50%)
+			left: 76%
+			top: 35%
+
+		
+	.item
+		a
+			text-decoration: none
+			figure
+				.hinh
+					overflow: hidden
+					position: relative
+					margin-top: 2rem
+					&:before
+						position: absolute
+						content: ''
+						display: block
+						width: 100%
+						height: 100%
+						z-index: 1
+					img
+						width: 100%
+						filter: grayscale(100%)
+						transition: .5s all ease-in-out
+						
+							
+				figcaption
+					h3
+						margin-top: 1rem
+						margin-bottom: 0
+						font-size: 1rem
+						color: #fff
+						text-transform: uppercase
+					p
+						color: darken(#fff,40%)
+			&:hover,&:active
+				figure
+					.hinh
+						&:before
+							box-shadow: 0 0 0 5px yellow inset
+						img
+							filter: grayscale(0%)
+					figcaption
+						h3
+							color: yellow
+						p
+							color: cyan
+	+media-breakpoint-up(md)
+		h2
+			font-size: 2rem
+			&:before
+				height: 0.1rem
+				width: 13rem
+				top: 45%
+			&:after
+				left: 73%
+				top: 48%
+				width: 13rem
+				height: 0.1rem
+	+media-breakpoint-up(lg)
+		h2
+			text-transform: uppercase
+			font-size: 2.5rem
+			&:before
+				height: 0.1rem
+				width: 25rem
+				top: 45%
+			&:after
+				left: 68%
+				top: 48%
+				width: 25rem
+				height: 0.1rem
+
+
+
+
+.home_banner2
+	.hinh
+		position: relative
+	.text
+		display: flex
+		h2
+			position: absolute
+			color: #FFF
+			top: 60%
+			left: 27%
+			font-size: .8rem
+			background: #000
+			padding-bottom: .7rem
+			padding-top: .2rem
+		p
+			position: absolute
+			color: #000
+			background: yellow
+			top: 72%
+			left: 34%
+			font-size: .5rem
+			padding: .2rem 0
+			margin: 0
+	.sale
+		display: flex
+		span
+			position: absolute
+			top: 14%
+			right: 2%
+			width: 2.5rem
+			height: 2.5rem
+			background: black
+			text-align: center
+			border-radius: 50%
+			padding-top: .3rem
+			font-size: 0.6rem
+			color: yellow
+	+media-breakpoint-up(md)
+		.text
+			h2
+				top: 65%
+				left: 27%
+				font-size: 2rem
+				padding-bottom: .7rem
+				padding-top: .2rem
+			p
+				top: 78%
+				left: 36%
+				font-size: 1rem
+				padding: .2rem 0
+				margin: 0
+				text-transform: uppercase
+		.sale
+			span
+				top: 6%
+				right: 2%
+				width: 3.5rem
+				height: 3.5rem
+				padding-top: .8rem
+				text-transform: uppercase
+		
+	.item
+		a
+			.hinh
+				position: relative
+				overflow: hidden
+				&:before
+					position: absolute
+					content: ''
+					display: block
+					width: 100%
+					height: 100%
+					z-index: 1
+			&:hover,&:active
+				.hinh
+					&:before
+						box-shadow: 0 0 0 5px white inset
+
+	+media-breakpoint-up(lg)
+		.text
+			h2
+				top: 62%
+				left: 26%
+				font-size: 3rem
+				padding-bottom: 1.5rem
+				padding-left: 1rem
+				padding-right: 1rem
+				padding-top: 1rem
+			p
+				top: 77%
+				left: 35%
+				font-size: 1.5rem
+				padding: .5rem
+				margin: 0
+				text-transform: uppercase
+		.sale
+			span
+				top: 4%
+				right: 2%
+				width: 4.5rem
+				height: 4.5rem
+				padding-top: .8rem
+				text-transform: uppercase
+				font-size: 1rem
+
+
+.save
+	margin-top: 2rem
+	a
+		.hinh
+			position: relative
+			overflow: hidden
+			// margin: 2rem
+			&:before
+				position: absolute
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				z-index: 1
+		&:hover,&:active
+			.hinh
+				&:before
+					box-shadow: 0 0 0 2px white inset
+
+	img
+		width: 100%
+
+	h3
+		font-size: 1.4rem
+		color: #fff
+		position: absolute
+		top: 2rem
+		box-shadow: 0 0 0 2px yellow inset
+		background: #262626
+		top: -16%
+		left: 14%
+		margin-bottom: 0
+		padding: .5rem
+	p
+		font-size: .8rem
+		margin-bottom: 0
+		color: #fff
+	.okbaby
+		position: relative
+		box-shadow: 0 0 0 2px yellow inset
+		padding: 1rem
+	+media-breakpoint-up(md)
+		// .hinh
+		// 	margin-bottom: 0
+		margin-top: 4rem
+		h3
+			font-size: 1.2rem
+			top: -12%
+			left: 24%
+			padding: 1rem
+		p
+			font-size: 1rem
+			padding: 2rem .5rem .5rem .5rem
+	+media-breakpoint-up(lg)
+		margin-top: 4rem
+		h3
+			font-size: 1.5rem
+			top: -9%
+			left: 29%
+			padding: 1rem
+		p
+			font-size: 1.5rem
+			justify-content: center
+			align-items: center
+			display: flex
+			text-align: center
+			padding: 5rem .5rem .5rem .5rem
+
+
+.logonho
+	margin-top: 3rem	
+	img
+		width: 100%
+		
+	h3
+		color: #fff
+		font-size: 1rem
+		text-align: center
+		position: relative
+		margin-bottom: 0
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			height: .1rem
+			width: 4.5rem
+			background: darken(#fff,60%)
+			top: 44%
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			height: .1rem
+			width: 4.5rem
+			background: darken(#fff,60%)
+			top: 44%
+			left: 78%
+	
+			
+	.items
+		img
+			filter: grayscale(100%)
+		&:hover,&:active
+			a
+				img
+					filter: grayscale(0%)
+	.owl-carousel
+			.owl-nav
+				button
+					i
+						background: yellow
+
+
+
+
+
+
+
+	+media-breakpoint-up(md)
+		h3
+			font-size: 1.5rem
+			&:before
+				width: 16rem
+			&:after
+				width: 17rem
+				left: 67%
+	+media-breakpoint-up(lg)
+		h3
+			font-size: 2.2rem
+			&:before
+				width: 27rem
+			&:after
+				width: 27rem
+				left: 67%
+		.owl-carousel
+			.owl-nav
+				button
+					i.fa.fa-arrow-left
+						left: -2%
+						top: 28%
+						width: 2rem
+						height: 1rem
+						background: yellow
+						display: block
+						position: absolute
+					i.fa.fa-arrow-right
+						left: 100%
+						top: 28%
+						width: 2rem
+						height: 1rem
+						background: yellow
+						display: block
+						position: absolute
